@@ -22,13 +22,13 @@ export const Transaction = ({ items }) => (
   </table>
 );
 
-Transaction.protoType = {
+Transaction.propType = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       type: PropTypes.string.isRequired,
       amount: PropTypes.number.isRequired,
-      currency: PropTypes.number.isRequired,
+      currency: PropTypes.string.isRequired,
     })
   ).isRequired,
 };
