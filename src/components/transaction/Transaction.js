@@ -22,7 +22,7 @@ export const Transaction = ({ items }) => (
   </table>
 );
 
-Transaction.propType = {
+Transaction.PropTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
